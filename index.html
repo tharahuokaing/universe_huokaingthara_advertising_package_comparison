@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="km" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSE HUOKAING THARA - Advertising Package Comparison / ប្រៀបធៀបកញ្ចប់ពាណិជ្ជកម្ម</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="universe_huokaingthara.jpg">
+</head>
+<body>
+
+    <!-- Holographic Scanline Overlay -->
+    <div id="holo-overlay"></div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="logo-container">
+            <i class="fa-solid fa-scale-balanced spin-icon"></i>
+            <h1>UNIVERSE HUOKAING THARA <span class="sub-title">ប្រៀបធៀបកញ្ចប់ពាណិជ្ជកម្ម / Package Comparison</span></h1>
+        </div>
+        <div class="controls">
+            <button id="langToggleBtn" class="control-btn">🇰🇭 / EN</button>
+            <button id="themeToggleBtn" class="control-btn"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+
+        <!-- Top Control & Filter Bar -->
+        <section class="intro-panel">
+            <div class="badge">📊 FULL FEATURE & REACH MATRIX 2026</div>
+            <h2 class="km">តារាងប្រៀបធៀបកញ្ចប់សេវាកម្មពាណិជ្ជកម្មលម្អិត</h2>
+            <h2 class="en">Detailed Advertising Package Comparison Matrix</h2>
+            <p class="km">ពិនិត្យ និងប្រៀបធៀបលក្ខណៈពិសេស វិសាលភាពអ្នកទស្សនា និងអត្ថប្រយោជន៍នៃកញ្ចប់ទាំង ៤ របស់ <strong>UNIVERSE HUOKAING THARA Group</strong>។</p>
+            <p class="en">Evaluate and compare every deliverable, audience reach metric, and sponsorship benefit across all 4 tiers under <strong>UNIVERSE HUOKAING THARA Group</strong>.</p>
+
+            <!-- Interactive Filter Toolbar -->
+            <div class="toolbar">
+                <!-- Billing Switch -->
+                <div class="tool-item">
+                    <span class="km">ប្រចាំខែ</span><span class="en">Monthly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="billingSwitch">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="km">ប្រចាំឆ្នាំ <strong class="vip-text">(-20%)</strong></span>
+                    <span class="en">Annual <strong class="vip-text">(-20%)</strong></span>
+                </div>
+
+                <!-- Highlight Differences Toggle -->
+                <div class="tool-item">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="diffToggle">
+                        <span class="km">បង្ហាញតែចំណុចខុសគ្នា (Highlight Differences)</span>
+                        <span class="en">Highlight Key Differences Only</span>
+                    </label>
+                </div>
+
+                <!-- Tier Focus Filter -->
+                <div class="tool-item">
+                    <select id="tierFilter" aria-label="Filter Tier Columns">
+                        <option value="all">Show All 4 Tiers / បង្ហាញទាំង ៤ កញ្ចប់</option>
+                        <option value="starter-standard">Starter vs. Standard</option>
+                        <option value="standard-vip">Standard vs. VIP Sponsor</option>
+                        <option value="vip-enterprise">VIP Sponsor vs. Enterprise</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Responsive Comparison Matrix -->
+        <section class="matrix-section">
+            <div class="table-container">
+                <table id="comparisonMatrix" class="matrix-table">
+                    <thead>
+                        <tr>
+                            <th class="feature-col">
+                                <span class="km">លក្ខណៈពិសេស & សេវាកម្ម</span>
+                                <span class="en">Deliverables & Features</span>
+                            </th>
+                            <th class="tier-col col-starter">
+                                <span class="tier-tag">TIER 01</span>
+                                <div class="tier-title">Starter Digital</div>
+                                <div class="tier-price">$<span class="price-val" data-m="250" data-y="200">250</span><small>/mo</small></div>
+                                <button class="pick-btn" data-tier="Starter Digital ($250/mo)">Select / ជ្រើសរើស</button>
+                            </th>
+                            <th class="tier-col col-standard">
+                                <span class="tier-tag">TIER 02</span>
+                                <div class="tier-title">Standard Media</div>
+                                <div class="tier-price">$<span class="price-val" data-m="600" data-y="480">600</span><small>/mo</small></div>
+                                <button class="pick-btn" data-tier="Standard Media ($600/mo)">Select / ជ្រើសរើស</button>
+                            </th>
+                            <th class="tier-col col-vip popular-col">
+                                <div class="top-ribbon">MOST POPULAR</div>
+                                <span class="tier-tag vip-text">TIER 03</span>
+                                <div class="tier-title">VIP Sponsor</div>
+                                <div class="tier-price">$<span class="price-val" data-m="1500" data-y="1200">1500</span><small>/mo</small></div>
+                                <button class="pick-btn vip-btn" data-tier="VIP Sponsor ($1,500/mo)">Select VIP / ជ្រើសរើស</button>
+                            </th>
+                            <th class="tier-col col-enterprise">
+                                <span class="tier-tag">TIER 04</span>
+                                <div class="tier-title">Enterprise</div>
+                                <div class="tier-price custom-txt">Custom</div>
+                                <button class="pick-btn" data-tier="Enterprise (Custom Quote)">Inquire / សាកសួរ</button>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!-- Category 1: Audience Reach & Impressions -->
+                        <tr class="category-row">
+                            <td colspan="5">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <span class="km">១. វិសាលភាពអ្នកទស្សនា (Audience Reach & Impressions)</span>
+                                <span class="en">1. Audience Reach & Monthly Impressions</span>
+                            </td>
+                        </tr>
+                        <tr data-diff="true">
+                            <td>
+                                <strong class="km">ចំនួនទស្សនាប៉ាន់ស្មានប្រចាំខែ</strong>
+                                <strong class="en">Estimated Monthly Views</strong>
+                            </td>
+                            <td class="col-starter">2M+ Views</td>
+                            <td class="col-standard">10M+ Views</td>
+                            <td class="col-vip popular-col"><strong>25M+ Views</strong></td>
+                            <td class="col-enterprise"><strong>50M+ Unlimited</strong></td>
+                        </tr>
+                        <tr data-diff="true">
+                            <td>
+                                <strong class="km">ការផ្សព្វផ្សាយលើ Facebook Page</strong>
+                                <strong class="en">Official Facebook Page Posts</strong>
+                            </td>
+                            <td class="col-starter">1 Post / Week</td>
+                            <td class="col-standard">3 Posts / Week</td>
+                            <td class="col-vip popular-col">Daily Featured</td>
+                            <td class="col-enterprise">Full Page Takeover</td>
+                        </tr>
+
+                        <!-- Category 2: Video & Production Integration -->
+                        <tr class="category-row">
+                            <td colspan="5">
+                                <i class="fa-solid fa-film"></i>
+                                <span class="km">២. ការផ្សព្វផ្សាយក្នុងវីដេអូ និងផលិតកម្ម (Video & Production)</span>
+                                <span class="en">2. Video Commercials & Production Integration</span>
+                            </td>
+                        </tr>
+                        <tr data-diff="true">
+                            <td>
+                                <strong class="km">វីដេអូពាណិជ្ជកម្មដើមរឿង (Pre-Roll Ad)</strong>
+                                <strong class="en">Pre-Roll Video Commercial</strong>
+                            </td>
+                            <td class="col-starter"><i class="fa-solid fa-xmark no-icon"></i></td>
+                            <td class="col-standard">Outro Logo Only</td>
+                            <td class="col-vip popular-col">15s HD Commercial</td>
+                            <td class="col-enterprise">30s–60s Custom Spot</td>
+                        </tr>
+                        <tr data-diff="true">
+                            <td>
+                                <strong class="km">Ghost Stories Khmer & Movies Sponsor</strong>
+                                <strong class="en">Ghost Stories & Movies Sponsorship</strong>
+                            </td>
+                            <td class="col-starter"><i class="fa-solid fa-xmark no-icon"></i></td>
+                            <td class="col-standard"><i class="fa-solid fa-xmark no-icon"></i></td>
+                            <td class="col-vip popular-col"><i class="fa-solid fa-check yes-icon"></i></td>
+                            <td class="col-enterprise"><i class="fa-solid fa-check yes-icon"></i> Title Sponsor</td>
+                        </tr>
+                        <tr data-diff="true">
+                            <td>
+                                <strong class="km">ការនិយាយណែនាំដោយតារាសម្តែង</strong>
+                                <strong class="en">Talent / Narrator Product Shoutout</strong>
+                            </td>
+                            <td class="col-starter"><i class="fa-solid fa-xmark no-icon"></i></td>
+                            <td class="col-standard"><i class="fa-solid fa-xmark no-icon"></i></td>
+                            <td class="col-vip popular-col"><i class="fa-solid fa-check yes-icon"></i> 2x / Month</td>
+                            <td class="col-enterprise"><i class="fa-solid fa-check yes-icon"></i> Every Episode</td>
+                        </tr>
+
+                        <!-- Category 3: Web Ecosystem & Banners -->
+                        <tr class="category-row">
+                            <td colspan="5">
+                                <i class="fa-solid fa-globe"></i>
+                                <span class="km">៣. ប្រព័ន្ធវេបសាយទាំង ១២ ម៉ូឌុល (Web Ecosystem)</span>
+                                <span class="en">3. 12-Module Web Ecosystem Placement</span>
+                            </td>
+                        </tr>
+                        <tr data-diff="true">
+                            <td>
+                                <strong class="km">ទីតាំងដាក់ Banner លើវេបសាយ</strong>
+                                <strong class="en">Web Banner Placement</strong>
+                            </td>
+                            <td class="col-starter">Footer Banner</td>
+                            <td class="col-standard">All 12 Modules Header</td>
+                            <td class="col-vip popular-col">Hero + All 12 Modules</td>
+                            <td class="col-enterprise">Exclusive Site Skin</td>
+                        </tr>
+                        <tr data-diff="true">
+                            <td>
+                                <strong class="km">អត្ថបទពាណិជ្ជកម្មលើទំព័រ Story</strong>
+                                <strong class="en">Sponsored Story / Article</strong>
+                            </td>
+                            <td class="col-starter"><i class="fa-solid fa-xmark no-icon"></i></td>
+                            <td class="col-standard">1 Article / Quarter</td>
+                            <td class="col-vip popular-col">2 Articles / Month</td>
+                            <td class="col-enterprise">Unlimited PR Hub</td>
+                        </tr>
+                        <tr data-diff="false">
+                            <td>
+                                <strong class="km">តំណភ្ជាប់ផ្ទាល់ទៅកាន់អាជីវកម្ម (SEO Backlink)</strong>
+                                <strong class="en">Direct Business Link & CTA Button</strong>
+                            </td>
+                            <td class="col-starter"><i class="fa-solid fa-check yes-icon"></i></td>
+                            <td class="col-standard"><i class="fa-solid fa-check yes-icon"></i></td>
+                            <td class="col-vip popular-col"><i class="fa-solid fa-check yes-icon"></i></td>
+                            <td class="col-enterprise"><i class="fa-solid fa-check yes-icon"></i></td>
+                        </tr>
+
+                        <!-- Category 4: Analytics & Support -->
+                        <tr class="category-row">
+                            <td colspan="5">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span class="km">៤. របាយការណ៍ទិន្នន័យ និងការគាំទ្រ (Analytics & Support)</span>
+                                <span class="en">4. Analytics, Exclusivity & Executive Support</span>
+                            </td>
+                        </tr>
+                        <tr data-diff="true">
+                            <td>
+                                <strong class="km">របាយការណ៍វិភាគចំនួនអ្នកទស្សនា</strong>
+                                <strong class="en">Performance Analytics Report</strong>
+                            </td>
+                            <td class="col-starter">End of Campaign</td>
+                            <td class="col-standard">Monthly PDF</td>
+                            <td class="col-vip popular-col">Real-Time Dashboard</td>
+                            <td class="col-enterprise">Live API + Weekly Audit</td>
+                        </tr>
+                        <tr data-diff="true">
+                            <td>
+                                <strong class="km">សិទ្ធិផ្តាច់មុខលើប្រភេទអាជីវកម្ម</strong>
+                                <strong class="en">Industry Category Exclusivity</strong>
+                            </td>
+                            <td class="col-starter"><i class="fa-solid fa-xmark no-icon"></i></td>
+                            <td class="col-standard"><i class="fa-solid fa-xmark no-icon"></i></td>
+                            <td class="col-vip popular-col">Partial (Sub-category)</td>
+                            <td class="col-enterprise"><i class="fa-solid fa-check yes-icon"></i> 100% Exclusive</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Interactive Reach & ROI Estimator -->
+        <section class="estimator-card">
+            <div class="estimator-header">
+                <h3 class="km"><i class="fa-solid fa-calculator"></i> ឧបករណ៍គណនាវិសាលភាពផ្សព្វផ្សាយប៉ាន់ស្មាន (Reach Estimator)</h3>
+                <h3 class="en"><i class="fa-solid fa-calculator"></i> Estimated Campaign Reach Calculator</h3>
+            </div>
+            <div class="estimator-body">
+                <div class="slider-control">
+                    <label for="durationRange">
+                        <span class="km">រយៈពេលផ្សព្វផ្សាយ (ខែ)៖</span>
+                        <span class="en">Campaign Duration (Months):</span>
+                        <strong id="monthsLabel" class="accent-txt">3 Months</strong>
+                    </label>
+                    <input type="range" id="durationRange" min="1" max="12" value="3">
+                </div>
+                <div class="estimator-results">
+                    <div class="stat-box">
+                        <span class="stat-title">Starter Reach</span>
+                        <strong id="estStarter">6.0M Views</strong>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-title">Standard Reach</span>
+                        <strong id="estStandard">30.0M Views</strong>
+                    </div>
+                    <div class="stat-box vip-box">
+                        <span class="stat-title">VIP Sponsor Reach</span>
+                        <strong id="estVip">75.0M Views</strong>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-title">Enterprise Reach</span>
+                        <strong id="estEnterprise">150.0M+ Views</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Quick Selection Toast -->
+    <div id="selectionToast" class="toast hidden">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toastMessage">Selected Tier</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 UNIVERSE HUOKAING THARA Group. All Rights Reserved. / រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
